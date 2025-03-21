@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust Travels</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://unpkg.com/@google/generative-ai/dist/browser.min.js"></script>
+    <script src="https://unpkg.com/@google/generative-ai/dist/browser.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+</head>
+<body>
+    <div id="app">
+        <div id="hero">
+        </div>
+      </div>
+    <div id="main">
+        <div data-scroll data-scroll-speed="-10" id="page1">
+            <nav>
+                <img src="" alt="Wanderlust Travels Logo">
+                <div id="right-nav">
+                    <button>Book Now</button>
+                    <button><i class="ri-menu-fill"></i></button>
+                </div>
+            </nav>
+            <div class="bottom-page1">
+                <h1>Discover Your <br> Perfect Journey</h1>
+                <div class="bottom-page1-inner">
+                    <h4>Unforgettable adventures tailored to your dreams. <br> Experience the world with Wanderlust.</h4>
+                    <button>EXPLORE DESTINATIONS</button>
+                </div>
+            </div>
+            <video src="https://videos.pexels.com/video-files/2257010/2257010-uhd_3840_2160_24fps.mp4" autoplay loop muted></video>
+        </div>
+        <div id="page2">
+            <h2>PERSONALIZED TRAVEL EXPERIENCES FOR EVERY EXPLORER</h2>
+            <h1>We curate unique travel journeys that match your personal style, preferences, and dreams. From adventure-filled expeditions to serene beach retreats, we design your perfect getaway.
+            </h1>
+        </div>
+        <div id="page8">
+            <div class="page8-bottom">
+                <h1>Wanderlust Premium</h1>
+                <a href="premium-packages.html" class="button">LEARN MORE</a>
+            </div>
+            <video src="https://videos.pexels.com/video-files/1448735/1448735-uhd_4096_2160_24fps.mp4" autoplay loop muted></video>
+        </div>
+        <div id="page4">
+            <h3>CONNECT WITH LOCAL CULTURES AND AUTHENTIC EXPERIENCES</h3>
+            <h1>Our network of local guides and partners ensures you experience destinations like a local, not a tourist. Immerse yourself in authentic cultural experiences, savor regional cuisine, and discover hidden gems only known to residents.</h1>
+        </div>
+        <div id="page5">
+            <div class="pricing-container">
+              <div class="section-title">
+                <h2>Adventure Packages</h2>
+                <p>Choose your perfect adventure experience</p>
+              </div>
+              
+              <div class="pricing-grid">
+                <!-- Weekend Explorer Package -->
+                <div class="pricing-card">
+                  <div class="card-image">
+                    <img src="https://scontent.fluh3-3.fna.fbcdn.net/o1/v/t0/f2/m340/AQOqCfhRLVVlv6zamR3BFinanF1lQjQKH-95nHjgWdKMy1r-j1ZWIT7F_vBd8jkBAa8VwNNxspWByYs1xWKaSqZvZvUqn1ZzAYlbmQ2gEfp_3dNtR6Yvskr3ECkAN75q6SBoy4BMFgKDMg_JMhcijdhukQxC.jpeg?_nc_ht=scontent.fluh3-3.fna.fbcdn.net&_nc_cat=101&_nc_oc=Adgv7fwR_FkClUShyr3W-8q1nQOHBdxiQ9-RDCp38rGOkHx98d8IoqfqzbFMKkT7ZtAHlC4VU8lPkonSrAiHf1dH&ccb=9-4&oh=00_AYG6S-QCf6HGTFSQtMXxAtyB3z052pp6h-kU2ICSuuU4Og&oe=67DA3410&_nc_sid=5b3566" alt="Weekend Explorer">
+                  </div>
+                  <div class="card-header">
+                    <h3 class="package-name">Weekend Explorer</h3>
+                    <div class="rating">
+                      <div class="star">★</div>
+                      <div class="star">★</div>
+                      <div class="star">★</div>
+                      <div class="star">★</div>
+                      <div class="star">★</div>
+                      <div class="reviews">(42)</div>
+                    </div>
+                    <h2 class="price">$299<span>/person</span></h2>
+                  </div>
+                  <div class="card-body">
+                    <ul class="features">
+                      <li>2-Day Adventure Trip</li>
+                      <li>Professional Guide</li>
+                      <li>Safety Equipment</li>
+                      <li>Transportation Included</li>
+                      <li>Lunch Provided</li>
+                    </ul>
+                    <button class="book-now" onclick="showBookingForm('Weekend Explorer')">Book Now</button>
+                  </div>
+                </div>
+                
+                <!-- Wilderness Week Package -->
+                <div class="pricing-card">
+                  <div class="promo-badge">POPULAR</div>
+                  <div class="card-image">
+                    <img src="https://scontent.fluh3-3.fna.fbcdn.net/o1/v/t0/f2/m340/AQNZSNZpP1oH58RMOck4jqFYeTjvDCk7Mb8ICWlc-LG-1NQMUiO8en5ko8DyySJVKAN2S7Zp4H7PS7_CJOu-5p7M0sraQ5e6094aEnGR87mPcGyIjgx6tUoQ9ojkcGtN02DcbmKU9CauSZqaRU6ZqCCa-nt6ZQ.jpeg?_nc_ht=scontent.fluh3-3.fna.fbcdn.net&_nc_cat=102&_nc_oc=Adi43yybAcVsYxdLmLQQBhruWtVhZUhtF7PrhtWwPf0Dw7-jP9BWA_zAdzAbitefx6Kg-dJtMHPk021F2bbPZ2RU&ccb=9-4&oh=00_AYF0dctg5ljgLehz0jFQa6Rmch3w8dcd0FUcrlDvGuEVIw&oe=67DA5309&_nc_sid=5b3566" alt="Wilderness Week">
+                  </div>
+                  <div class="card-header">
+                    <h3 class="package-name">Wilderness Week</h3>
+                    <div class="rating">
+                      <div class="star">★</div>
+                      <div class="star">★</div>
+                      <div class="star">★</div>
+                      <div class="star">★</div>
+                      <div class="star">★</div>
+                      <div class="reviews">(87)</div>
+                    </div>
+                    <h2 class="price">$899<span>/person</span></h2>
+                  </div>
+                  <div class="card-body">
+                    <ul class="features">
+                      <li>7-Day Full Adventure</li>
+                      <li>Expert Expedition Leader</li>
+                      <li>Premium Safety Gear</li>
+                      <li>All-inclusive Meals</li>
+                      <li>Exclusive Wildlife Viewing</li>
+                    </ul>
+                    <button class="book-now" onclick="showBookingForm('Wilderness Week')">Book Now</button>
+                  </div>
+                </div>
+                
+                <!-- Mountain Explorer Package -->
+                <div class="pricing-card">
+                  <div class="card-image">
+                    <img src="https://scontent.fluh3-3.fna.fbcdn.net/o1/v/t0/f2/m340/AQMdqCS8mifu8Pj0_eX6fQynQnZVnWd2vQwYQqxUjK5ph9KoWOY7I0QVvxj47SzJUuZ4w-54nWCPEUtSY7b67H-9ye0YKdl_32Ie1tghlvFF9C1zxlB5N7CBTW1Sg3J8Bp5D8HZk0-mxf2gmnTGp-En33I7uLQ.jpeg?_nc_ht=scontent.fluh3-3.fna.fbcdn.net&_nc_cat=103&_nc_oc=Adg0g9nOLcWC3S_nzVWx2zobtoftMUu8G-lIf0q9xrkTeGW6pBtZMYBP9b8SLbnrDc26dxI69f2RtHB7QBIzFOp5&ccb=9-4&oh=00_AYE1Xjsdf0qorM_K0rP9SAiA49OjlLiljMEq1560yoPwCw&oe=67DA3516&_nc_sid=5b3566" alt="Mountain Explorer">
+                  </div>
+                  <div class="card-header">
+                    <h3 class="package-name">Mountain Explorer</h3>
+                    <div class="rating">
+                      <div class="star">★</div>
+                      <div class="star">★</div>
+                      <div class="star">★</div>
+                      <div class="star">★</div>
+                      <div class="star">★</div>
+                      <div class="reviews">(65)</div>
+                    </div>
+                    <h2 class="price">$499<span>/person</span></h2>
+                  </div>
+                  <div class="card-body">
+                    <ul class="features">
+                      <li>5-Day Mountain Trek</li>
+                      <li>Experienced Guide</li>
+                      <li>Safety Equipment</li>
+                      <li>Transportation Included</li>
+                      <li>Meals Provided</li>
+                    </ul>
+                    <button class="book-now" onclick="showBookingForm('Mountain Explorer')">Book Now</button>
+                  </div>
+                </div>
+                
+                <!-- Desert Safari Package -->
+                <div class="pricing-card">
+                  <div class="card-image">
+                    <img src="https://scontent.fluh3-3.fna.fbcdn.net/o1/v/t0/f2/m340/AQOLwPhViko3Dk0Pt3m9Oe4P02gOVSUH8zh6nQgdyZJwVDJEBDVXGzdq8mCjHp2Y6CSuzaIZkTm3mV2SU8w9b5iP3mpnQu9OW28XFES3LG4kei5R8G7VSCpw1LMXyZs5rnJembXwuJ35nnqJDYQKdsbB9TZPiA.jpeg?_nc_ht=scontent.fluh3-3.fna.fbcdn.net&_nc_cat=105&_nc_oc=Adhw47K2iOonAuH9-eRWSwku1gL9LxdgokpQ-iZ1R6mQSgBRSN_znsPPTA2gXjJsPxylUWNUjd4kaWNAa5LP4BKI&ccb=9-4&oh=00_AYEpGmXLp70Wa4xWtYbUlqg8MvcwiTXx9V_tj9p7k7gxaQ&oe=67DA3F30&_nc_sid=5b3566" alt="Desert Safari">
+                  </div>
+                  <div class="card-header">
+                    <h3 class="package-name">Desert Safari</h3>
+                    <div class="rating">
+                      <div class="star">★</div>
+                      <div class="star">★</div>
+                      <div class="star">★</div>
+                      <div class="star">★</div>
+                      <div class="star">★</div>
+                      <div class="reviews">(51)</div>
+                    </div>
+                    <h2 class="price">$399<span>/person</span></h2>
+                  </div>
+                  <div class="card-body">
+                    <ul class="features">
+                      <li>3-Day Desert Adventure</li>
+                      <li>Professional Guide</li>
+                      <li>Safety Equipment</li>
+                      <li>Transportation Included</li>
+                      <li>Meals Provided</li>
+                    </ul>
+                    <button class="book-now" onclick="showBookingForm('Desert Safari')">Book Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div id="page6">
+            <div class="sustainable-content">
+                <h3>SUSTAINABLE TRAVEL WITH PURPOSE</h3>
+                <h1>We're committed to responsible tourism that respects local communities and environments. Our eco-friendly travel options support conservation efforts and sustainable practices while giving you an unforgettable experience.</h1>
+            </div>
+            <div class="sustainable-stats">
+                <div class="stat-card">
+                    <h3>🌍 2500+</h3>
+                    <p>Protected Ecosystems Supported</p>
+                </div>
+                <div class="stat-card">
+                    <h3>🌱 90%</h3>
+                    <p>Carbon Neutral Journeys</p>
+                </div>
+                <div class="stat-card">
+                    <h3>🤝 150+</h3>
+                    <p>Local Communities Engaged</p>
+                </div>
+            </div>
+        </div>
+        <div id="page7">
+          <div class="packing-generator-container">
+              <div class="generator-3d-bg"></div>
+              <div class="generator-content">
+                  <h1>Travel Checklist Generator</h1>
+                  <p>Plan your perfect trip with our personalized packing list generator.</p>
+                  <div class="generator-form">
+                      <div class="input-group">
+                          <label for="destination">Destination:</label>
+                          <input type="text" id="destination" placeholder="Enter your destination">
+                      </div>
+                      <div class="input-group">
+                          <label for="tripType">Trip Type:</label>
+                          <select id="tripType">
+                              <option value="beach">Beach Vacation</option>
+                              <option value="city">City Break</option>
+                              <option value="adventure">Adventure/Hiking</option>
+                              <option value="business">Business Trip</option>
+                              <option value="other">Other</option>
+                          </select>
+                      </div>
+                      <div class="input-group">
+                          <label for="duration">Duration (Days):</label>
+                          <input type="number" id="duration" placeholder="Number of days" value="7">
+                      </div>
+                      <button onclick="generateChecklist()">Generate Checklist</button>
+                  </div>
+      
+                  <div class="checklist-area" id="checklistArea">
+                      <h2>Your Packing Checklist</h2>
+                      <ul id="packingList">
+                          <!-- Checklist items will be generated here by JavaScript -->
+                      </ul>
+                      <div class="tips-area" id="tipsArea">
+                          <!-- Tips will be added here by JavaScript -->
+                      </div>
+                      <button onclick="printChecklist()" class="print-button">Print Checklist</button>
+                  </div>
+              </div>
+          </div>
+          <div style="clear: both;"></div> 
+      </div>
+        <div id="page9">
+            <div class="left9">
+                <h1>Why Choose</h1>
+                <h2>Wanderlust Travels?</h2>
+            </div>
+            <div class="right9">
+                <div class="right9-center"></div>
+            </div>
+        </div>
+        <div id="page10">
+          <div class="left10">
+            <!-- Three stacked image containers -->
+            <div class="image-container" style="top: 0">
+                <img src="https://plus.unsplash.com/premium_photo-1663100508636-c57cd61c84d2?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dHJhdmVsJTIwYWdlbnR8ZW58MHx8MHx8fDA%3D" alt="Travel team">
+            </div>
+            <div class="image-container" style="top: 33.3%">
+                <img src="https://images.unsplash.com/photo-1511068797325-6083f0f872b1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dHJhdmVsJTIwYWdlbnR8ZW58MHx8MHx8fDA%3D" alt="Digital platform">
+            </div>
+            <div class="image-container" style="top: 66.6%">
+                <img src="https://images.unsplash.com/photo-1554774853-719586f82d77?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHRyYXZlbCUyMGFnZW50fGVufDB8fDB8fHww" alt="Support team">
+            </div>
+          </div>
+            <div class="right10">
+                <div class="right10-inner">
+                    <h1>Expert Travel Advisors
+                    </h1>
+                    <p>Our team of experienced travel specialists has explored the destinations we offer, ensuring firsthand knowledge and insider tips for your journey.</p>
+                </div>
+                <div class="right10-inner">
+                    <h1>Seamless Planning Experience</h1>
+                    <p>From your first inquiry to your return home, we handle all the details. Our digital platform keeps your itinerary, documents, and information organized and accessible anywhere.</p>
+                </div>
+                <div class="right10-inner">
+                    <h1>24/7 Travel Support</h1>
+                    <p>Travel with confidence knowing our team is available around the clock to assist with any unexpected changes or emergencies during your journey.</p>
+                </div>
+            </div>
+        </div>
+        <div id="page11">
+            <h1>Popular Destinations</h1>
+            <div class="page11-inner">
+                <div class="left11">
+                    <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2FudG9yaW5pfGVufDB8fDB8fHww" alt="Santorini, Greece">
+                </div>
+                <div class="right11">
+                    <h4>MEDITERRANEAN GEMS</h4>
+                    <h1>Santorini's Blue Paradise</h1>
+                </div>
+            </div>
+            <div class="page11-inner">
+                <div class="left11">
+                    <img src="https://images.unsplash.com/photo-1545133875-55b651cbf4aa" alt="Bali, Indonesia">
+                </div>
+                <div class="right11">
+                    <h4>TROPICAL ESCAPES</h4>
+                    <h1>Bali's Sacred Temples</h1>
+                </div>
+            </div>
+            <div class="page11-inner">
+                <div class="left11">
+                    <img src="https://images.unsplash.com/photo-1557093793-e196ae071479" alt="Kyoto, Japan">
+                </div>
+                <div class="right11">
+                    <h4>CULTURAL JOURNEYS</h4>
+                    <h1>Kyoto's Ancient Wonders</h1>
+                </div>
+            </div>
+        </div>
+        <div id="page12">
+            <div class="page12-inner">
+              
+                <div class="page12-text">
+                    <h1>Our Customers Say</h1>
+                    <p>Join thousands of satisfied explorers who have discovered their dream destinations with our award-winning travel services.</p>
+                </div>
+                <div class="testimonials">
+                    <div class="testimonial">
+                        <img src="data:image/jpeg;base64,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" alt="Sarah & John">
+                        <p>"Wanderlust Travels made our dream vacation a reality. The attention to detail and personalized service were outstanding!"</p>
+                        <h4>- Sarah & John</h4>
+                    </div>
+                    <div class="testimonial">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ77f_2G5T6e_zGUSRSNMEV4g7I7F7xDd9vXpO9ycyKXM7OrPvMx1_9eSefSfuiGN-igqE&usqp=CAU" alt="Emily R.">
+                        <p>"An unforgettable experience! The local guides were knowledgeable and friendly, making our trip truly special."</p>
+                        <h4>- Emily R.</h4>
+                    </div>
+                    <div class="testimonial">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9siu_kjmnT2b1WuQlQUqYNOIHL0s3lAJFIyko-K4Dd9aFqGXRNdvywSf2ShbPHXrY630&usqp=CAU" alt="Michael T.">
+                        <p>"I highly recommend Wanderlust Travels. Their commitment to sustainable tourism and exceptional service is unmatched."</p>
+                        <h4>- Michael T.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="page13">
+            <h1>Start your journey <br> with us today</h1>
+            <button>CONTACT AN ADVISOR</button>
+        </div>
+        <div id="page14">
+            <div class="page14-inner">
+                <h1>Destinations</h1>
+                <i class="ri-arrow-right-up-line"></i>
+                <div class="center14"></div>
+            </div>
+            <div class="page14-inner">
+                <h1>Travel Styles</h1>
+                <i class="ri-arrow-right-up-line"></i>
+                <div class="center14"></div>
+            </div>
+            <div class="page14-inner">
+                <h1>Contact Us</h1>
+                <i class="ri-arrow-right-up-line"></i>
+                <div class="center14"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Add this anywhere in your HTML file -->
+<div class="chatbot-container">
+    <div class="chatbot-icon" onclick="toggleChat()">
+      <img src="https://cdn-icons-png.flaticon.com/512/4711/4711474.png" alt="AI Travel Guide" width="60">
+    </div>
+    
+    <div class="chat-window" id="chatWindow">
+      <div class="chat-header">
+        <h3>Wanderlust AI Guide</h3>
+        <span class="close-btn" onclick="toggleChat()">×</span>
+      </div>
+      <div class="chat-messages" id="chatMessages">
+        <div class="bot-message">
+          <p>🌍 Hello! I'm your AI travel assistant. Ask me about destinations, bookings, or travel tips!</p>
+        </div>
+      </div>
+      <div class="chat-input">
+        <input type="text" id="userInput" placeholder="Ask me anything..." 
+               onkeypress="if(event.key === 'Enter') sendMessage()">
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+  </style>
+  
+  <style>
+  /* Chatbot Styles */
+  .chatbot-container {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+  }
+  
+  .chatbot-icon {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 2px 5px rgba(0,0,0,0.2));
+  }
+  
+  .chatbot-icon:hover {
+    transform: scale(1.1) rotate(-10deg);
+  }
+  
+  .chat-window {
+    width: 380px;
+    height: 600px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.15);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .chat-window.active {
+    display: flex;
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .chat-header {
+    background: linear-gradient(135deg, #0c8599, #2a9d8f);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .chat-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .close-btn {
+    cursor: pointer;
+    font-size: 28px;
+    padding: 0 8px;
+    transition: transform 0.2s ease;
+  }
+  
+  .close-btn:hover {
+    transform: scale(1.2);
+  }
+  
+  .chat-messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .chat-input {
+    display: flex;
+    padding: 15px;
+    background: white;
+    border-top: 1px solid #eee;
+  }
+  
+  .chat-input input {
+    flex: 1;
+    padding: 12px 20px;
+    border: 2px solid #0c8599;
+    border-radius: 30px;
+    margin-right: 10px;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .chat-input button {
+    background: #0c8599;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .chat-input button:hover {
+    background: #2a9d8f;
+    transform: translateY(-1px);
+  }
+  
+  /* Messages */
+  .user-message, .bot-message {
+    max-width: 80%;
+    padding: 15px;
+    border-radius: 20px;
+    animation: messageAppear 0.3s ease;
+  }
+  
+  .user-message {
+    background: #0c8599;
+    color: white;
+    margin-left: auto;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .bot-message {
+    background: white;
+    border: 1px solid #eee;
+    margin-right: auto;
+    border-bottom-left-radius: 5px;
+  }
+  
+  .loading-indicator {
+    display: flex;
+    gap: 8px;
+    padding: 15px;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    background: #0c8599;
+    border-radius: 50%;
+    animation: bounce 1.4s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+  }
+  
+  @keyframes messageAppear {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  </style>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@google/generative-ai"></script>
+
+  
+  <script>
+  // Load Google Generative AI SDK
+
+const API_KEY = 'AIzaSyABCmVGSSH9Mbzb0StKIgbc4b5GHQH1Whc'; // Replace with your key
+
+let chatSession = null;
+let isProcessing = false;
+
+// Initialize Gemini Chat Model
+async function initializeChat() {
+    try {
+        console.log("Initializing Chat...");
+        const genAI = new window.GoogleGenerativeAI(AIzaSyD4n4SO_fYYSaqeh4iPt0x6EPkNvhfx55w);
+        const model = genAI.getGenerativeModel({ model: 'gemini-pro' });
+
+        chatSession = await model.startChat();  // FIX: Awaiting the session start
+        console.log("Chat Initialized Successfully!");
+    } catch (error) {
+        console.error('Gemini Error:', error);
+        showErrorMessage('Our AI guide is currently unavailable. Please try again later.');
+    }
+}
+
+// Handle Sending Messages
+async function sendMessage() {
+    
+    
+    if (isProcessing) return;
+
+    const inputField = document.getElementById('userInput');
+    const message = inputField.value.trim();
+    if (!message) return;
+
+    try {
+        isProcessing = true;
+        inputField.disabled = true;
+
+        // Add user message to chat
+        addMessage(message, 'user');
+
+        // Show loading indicator
+        const loadingId = showLoading();
+
+        // Get Gemini AI response
+        console.log("Sending Message:", message);
+        const result = await chatSession.sendMessage(message);
+        const response = await result.response;
+        const text = await response.text(); // FIXED: Await response text
+
+        console.log("Received Response:", text);
+
+        // Update UI with bot response
+        removeLoading(loadingId);
+        addMessage(formatResponse(text), 'bot');
+
+    } catch (error) {
+        console.error('Chat Error:', error);
+        showErrorMessage('Oops! Something went wrong. Please try your question again.');
+    } finally {
+        inputField.disabled = false;
+        inputField.value = '';
+        isProcessing = false;
+    }
+}
+
+// Toggle Chat Window
+function toggleChat() {
+    const chatWindow = document.getElementById('chatWindow');
+    chatWindow.classList.toggle('active');
+}
+
+// Add Messages to Chat Window
+function addMessage(text, sender) {
+    const messagesDiv = document.getElementById('chatMessages');
+    const messageEl = document.createElement('div');
+    messageEl.className = `${sender}-message`;
+    messageEl.innerHTML = `<p>${text}</p>`;
+    messagesDiv.appendChild(messageEl);
+    messagesDiv.scrollTop = messagesDiv.scrollHeight;
+}
+
+// Show Loading Indicator
+function showLoading() {
+    const id = Date.now();
+    const messagesDiv = document.getElementById('chatMessages');
+    messagesDiv.innerHTML += `
+      <div class="loading-indicator" id="loading-${id}">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    `;
+    return id;
+}
+
+// Remove Loading Indicator
+function removeLoading(id) {
+    const loadingEl = document.getElementById(`loading-${id}`);
+    if (loadingEl) loadingEl.remove();
+}
+
+// Format AI Response
+function formatResponse(text) {
+    if (!text) return "I'm not sure how to respond. Try rephrasing!";
+    return text
+        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') // Bold
+        .replace(/\*(.*?)\*/g, '<em>$1</em>') // Italic
+        .replace(/- (.*?)(\n|$)/g, '• $1<br>'); // Bullet points
+}
+
+// Show Error Messages in Chat
+function showErrorMessage(text) {
+    const messagesDiv = document.getElementById('chatMessages');
+    messagesDiv.innerHTML += `
+      <div class="bot-message error">
+        <p>⚠️ ${text}</p>
+      </div>
+    `;
+}
+
+// Initialize Chat When Page Loads
+window.addEventListener('load', function() {
+    setTimeout(initializeChat, 1000); // Delayed initialization for better stability
+});
+
+  </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js" integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js" integrity="sha512-IHDCHrefnBT3vOCsvdkMvJF/MCPz/nBauQLzJkupa4Gn4tYg5a6VGyzIrjo6QAUy3We5HFOZUlkUpP0dkgE60A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,605 @@
+/* REVISED & LUXURIOUS CSS for Premium Packages - Jademillsestates.com Style */
+
+/* Global Styles */
+:root {
+    --primary-color: #cba135; /* Refined Gold/Bronze (adjust to match JM more closely if needed) */
+    --secondary-color: #1e272e; /* Dark Charcoal (adjust to JM's exact dark color) */
+    --text-color-primary: #333;
+    --text-color-secondary: #666;
+    --background-color: #fefefe; /* Soft White (like JM) */
+    --light-gray: #f0f0f0; /* Slightly darker light gray */
+    --accent-color: #e6b84d; /* Lighter Gold Accent */
+    --form-background: #fff;
+    --form-border: #ccc; /* Lighter form border */
+    --box-shadow-light: 0 2px 5px rgba(0, 0, 0, 0.05);
+    --box-shadow-medium: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --transition-duration: 0.3s;
+
+    /* Font Family - Jademillsestates.com uses elegant fonts */
+    --heading-font: 'Playfair Display', serif; /* Keep Playfair Display, very elegant */
+    --body-font: 'Arial', sans-serif; /* JM might use Arial or a similar clean sans-serif */
+}
+
+body {
+    font-family: var(--body-font);
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color-primary);
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+    margin-bottom: 0.6em;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 2.6rem; /* Slightly smaller h2 than before */
+    letter-spacing: -0.02em;
+}
+
+h3 {
+    font-size: 1.7rem; /* Slightly smaller h3 */
+    letter-spacing: -0.01em;
+}
+
+p {
+    font-size: 1.1rem;
+    color: var(--text-color-secondary);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color var(--transition-duration) ease;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+.button {
+    display: inline-block;
+    padding: 14px 30px; /* Slightly smaller buttons */
+    border: none;
+    border-radius: 5px; /* Less rounded buttons, more rectangular like JM */
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow var(--transition-duration) ease;
+    box-shadow: var(--box-shadow-light);
+    letter-spacing: 0.01em;
+    background-color: var(--primary-color); /* Solid color buttons, like JM */
+    color: white;
+}
+
+.button:hover {
+    transform: scale(1.03);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* Subtler hover shadow */
+    background-color: var(--accent-color); /* Lighter gold on hover */
+}
+
+.primary-button {
+    /* Inherits base button styles */
+}
+
+.hero-button {
+    font-size: 1.2rem;
+    padding: 16px 35px;
+}
+
+/* Header and Navigation - Cleaner, simpler nav like JM */
+header {
+    background-color: rgb(0, 0, 0);
+    padding: 1rem 0; /* Reduced header padding */
+    box-shadow: var(--box-shadow-light);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.logo {
+    font-size: 1.6rem; /* Slightly smaller logo */
+    font-weight: 700;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 15px; /* Reduced nav link padding */
+    color: var(--text-color-primary);
+    border-radius: 4px; /* Less rounded nav links */
+    transition: background-color var(--transition-duration) ease, color var(--transition-duration) ease;
+    font-weight: normal; /* Normal font weight for nav links */
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: white;
+    background-color: var(--primary-color);
+}
+
+/* Hero Section - More like JM's minimalist hero */
+#hero {
+    
+    background-size: cover;
+    background-position: center;
+    color: rgb(0, 0, 0);
+    text-align: left; /* Left-align hero text like JM */
+    padding: 180px 20px; /* Keep hero padding */
+    position: relative;
+    overflow: hidden;
+}
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire area, cropping if needed */
+    z-index: -1; /* Place video behind the content */
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 850px; /* Slightly narrower hero content area */
+    margin-left: 30px; /* Indent hero content from left edge */
+    margin-right: auto;
+    padding: 0; /* Remove padding from hero content */
+}
+
+#hero h1 {
+    color: white;
+    font-size: 4rem; /* Hero heading size */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    line-height: 1.1;
+}
+
+#hero p {
+    font-size: 1.2rem; /* Hero paragraph size */
+    margin-bottom: 40px;
+    line-height: 1.8;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    font-weight: 300;
+    max-width: 600px; /* Limit hero paragraph width for readability */
+}
+
+.hero-button {
+    font-size: 1.1rem; /* Slightly smaller hero button */
+    padding: 14px 30px;
+}
+
+/* Why Premium Section - More spacious and clean */
+#why-premium {
+    padding: 90px 30px; /* Increased padding */
+    text-align: center;
+    background-color: var(--background-color);
+}
+
+#why-premium h2 {
+    margin-bottom: 50px;
+    color: var(--primary-color);
+    font-size: 2.8rem;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.benefit-item {
+    background-color: var(--form-background);
+    padding: 40px 30px;
+    border-radius: 8px; /* Less rounded benefit items */
+    box-shadow: var(--box-shadow-light);
+    text-align: center;
+    transition: transform var(--transition-duration) ease;
+    border: 1px solid transparent;
+}
+
+.benefit-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Subtler hover shadow */
+    border-color: rgba(var(--primary-color-rgb), 0.05); /* Very subtle gold border on hover */
+}
+
+.benefit-item .icon {
+    font-size: 2.8rem; /* Slightly smaller icons */
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    display: block;
+}
+
+.benefit-item h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.7rem; /* Slightly smaller benefit headings */
+}
+
+.benefit-item p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* Customization Form Section - Cleaner, more JM-like forms */
+#customization-form {
+    padding: 90px 30px; /* Increased padding */
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: var(--light-gray); /* Light gray form section background */
+    border-radius: 0; /* No rounded corners for form section, more modern */
+    box-shadow: none; /* No inset shadow */
+}
+
+#customization-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+    font-size: 2.8rem;
+}
+
+.form-description {
+    text-align: center;
+    color: var(--text-color-secondary);
+    margin-bottom: 50px;
+    font-size: 1.15rem;
+    line-height: 1.9;
+    font-weight: 300;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#premium-form .step-section {
+    margin-bottom: 50px;
+    padding: 40px;
+    background-color: var(--form-background);
+    border-radius: 0; /* No rounded corners for step sections, cleaner */
+    box-shadow: none; /* No box shadow on step sections */
+    border: 1px solid var(--form-border);
+    transition: border-color var(--transition-duration) ease; /* Border transition */
+}
+
+#premium-form .step-section:hover {
+    border-color: var(--primary-color); /* Subtle border hover effect */
+}
+
+#premium-form .step-section h3 {
+    margin-top: 0;
+    margin-bottom: 25px; /* Reduced spacing below step headings */
+    border-bottom: 1px solid var(--light-gray); /* Thinner border */
+    padding-bottom: 12px; /* Reduced padding below step headings */
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+
+.form-group {
+    margin-bottom: 20px; /* Reduced spacing between form groups */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px; /* Reduced spacing below labels */
+    font-weight: 500;
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+}
+
+.form-group label .required {
+    color: var(--primary-color);
+    margin-left: 3px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 15px; /* Reduced padding in form fields */
+    border: none; /* No border initially */
+    border-bottom: 1px solid var(--form-border); /* Underline style border like JM */
+    border-radius: 0; /* No rounded corners for form fields */
+    font-size: 1rem;
+    box-sizing: border-box;
+    background-color: transparent; /* Transparent background, cleaner look */
+    color: var(--text-color-primary);
+    transition: border-color var(--transition-duration) ease, box-shadow var(--transition-duration) ease;
+    box-shadow: none; /* No inset shadow */
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="date"]:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-bottom-color: var(--primary-color); /* Gold underline on focus */
+    box-shadow: none; /* No focus ring */
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px; /* Slightly shorter textareas */
+}
+
+.form-group input[type="checkbox"],
+.form-group input[type="radio"] {
+    margin-right: 8px;
+    vertical-align: middle;
+    transform: scale(1); /* Normal size checkboxes/radios */
+}
+
+/* Quote Section - Cleaner quote section */
+#quote-section {
+    text-align: center;
+    padding: 50px 30px; /* Reduced padding */
+    background-color: var(--form-background); /* White background for quote */
+    border-radius: 0; /* No rounded corners for quote section */
+    box-shadow: none; /* No box shadow for quote section */
+    margin-top: 30px; /* Reduced top margin */
+}
+
+#quote-section h2 {
+    margin-bottom: 25px;
+    color: var(--primary-color);
+    font-size: 2.6rem;
+}
+
+#quote-summary {
+    margin-bottom: 30px;
+    /* Style for summary display */
+}
+
+.price-disclaimer {
+    color: var(--text-color-secondary);
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#form-error-message {
+    color: #ff4d4d;
+    margin-bottom: 20px;
+    font-weight: 500;
+    padding: 15px;
+    background-color: #ffe6e6;
+    border: 1px solid #ffb3b3;
+    border-radius: 4px; /* Less rounded error message */
+}
+
+/* Inspiration Section - Cleaner inspiration section */
+#inspiration {
+    padding: 90px 30px; /* Increased padding */
+    text-align: center;
+    background-color: var(--background-color); /* White inspiration section background */
+}
+
+#inspiration h2 {
+    margin-bottom: 50px;
+    color: var(--primary-color);
+    font-size: 2.8rem;
+}
+
+.inspiration-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.inspiration-item {
+    border-radius: 0; /* No rounded corners for inspiration items, more modern */
+    overflow: hidden;
+    box-shadow: var(--box-shadow-light); /* Subtle shadow */
+    transition: transform var(--transition-duration) ease, box-shadow var(--transition-duration) ease;
+}
+
+.inspiration-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Subtler hover shadow */
+}
+
+.inspiration-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: opacity var(--transition-duration) ease, transform var(--transition-duration) ease;
+    transform: scale(1);
+}
+.inspiration-item:hover img {
+    opacity: 0.9;
+    transform: scale(1.03); /* Slight zoom on hover */
+}
+
+.inspiration-item h3 {
+    padding: 20px;
+    margin: 0;
+    background-color: var(--form-background);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* Footer - Simpler footer, like JM */
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 40px 30px; /* Reduced footer padding */
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    font-size: 1.3rem; /* Slightly smaller footer logo */
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links li {
+    margin: 0 20px;
+}
+
+.footer-links li a {
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color var(--transition-duration) ease;
+    font-weight: normal; /* Normal font weight for footer links */
+}
+.footer-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Confirmation Message Overlay - Simpler confirmation box */
+#submission-confirmation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.confirmation-content {
+    background-color: white;
+    padding: 50px; /* Reduced padding */
+    border-radius: 8px; /* Less rounded confirmation box */
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Subtler confirmation box shadow */
+    max-width: 650px; /* Slightly narrower confirmation box */
+    width: 90%;
+}
+
+.confirmation-icon {
+    font-size: 3.5rem; /* Smaller icon in confirmation */
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.confirmation-content h2 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    font-size: 2.6rem; /* Smaller heading in confirmation */
+}
+.confirmation-content p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+#confirmation-content .button {
+    font-size: 1.1rem; /* Button in confirmation also smaller */
+    padding: 14px 30px;
+}
+
+
+/* Responsive adjustments - Smaller font sizes for mobile */
+@media (max-width: 768px) {
+    h2 { font-size: 2.3rem; }
+    h3 { font-size: 1.6rem; }
+    p, .form-group label, .button, nav ul li a, .footer-links li a { font-size: 1rem; }
+    .hero-button { font-size: 1.1rem; }
+    nav { padding: 0 20px; }
+    nav ul li { margin-left: 15px; }
+    #hero { padding: 140px 20px; text-align: center; } /* Center hero text on mobile */
+    .hero-content { margin-left: auto; margin-right: auto; text-align: center; } /* Center hero content on mobile */
+    #hero h1 { font-size: 3rem; }
+    #hero p { font-size: 1.2rem; margin-bottom: 30px; }
+    #why-premium, #customization-form, #inspiration { padding: 70px 20px; }
+    .benefits-grid, .inspiration-grid { grid-template-columns: 1fr; gap: 30px; }
+    .benefit-item, .step-section, #quote-section, .inspiration-item { padding: 30px; margin-bottom: 20px; }
+    footer { padding: 40px 20px; }
+    .confirmation-content { padding: 40px; }
+    .confirmation-icon { font-size: 3rem; }
+    .confirmation-content h2 { font-size: 2rem; }
+    .confirmation-content p { font-size: 1.1rem; }
+    #confirmation-content .button { font-size: 1rem; padding: 14px 30px; }
+}
+
+@media (max-width: 576px) {
+    h2 { font-size: 2rem; }
+    h3 { font-size: 1.5rem; }
+    p, .form-group label, .button, nav ul li a, .footer-links li a { font-size: 0.95rem; }
+    .hero-button { font-size: 1rem; }
+    nav { padding: 0 15px; }
+    nav ul li { margin-left: 10px; }
+    #hero { padding: 120px 15px; }
+    #hero h1 { font-size: 2.6rem; }
+    #hero p { font-size: 1.1rem; margin-bottom: 25px; }
+    #why-premium, #customization-form, #inspiration { padding: 50px 15px; }
+    .benefits-grid, .inspiration-grid { gap: 25px; }
+    .benefit-item, .step-section, #quote-section, .inspiration-item { padding: 25px; margin-bottom: 15px; }
+    footer { padding: 30px 15px; }
+    .confirmation-content { padding: 30px; }
+    .confirmation-icon { font-size: 2.8rem; }
+    .confirmation-content h2 { font-size: 1.8rem; }
+    .confirmation-content p { font-size: 1rem; }
+    #confirmation-content .button { font-size: 0.9rem; padding: 12px 25px; }
+}

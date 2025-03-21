@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust Travels - Design Your Dream Premium Trip</title>
+    <link rel="stylesheet" href="premium-packages.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- Font Awesome for Icons - Optional -->
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Wanderlust Travels</div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/premium-packages" class="active">Premium Packages</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+            <div id="hero">
+                <video autoplay loop muted playsinline class="hero-video">
+                    <source src="/Users/abhinand/Downloads/Abhi_22_A_woman_with_long_blonde_hair_is_sitting_in_the_dr_https___video-to-video.20e6264b3285ab3e9b554e17efb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="hero-content">
+                    <!-- Your hero text content (<h1>, <p>, buttons) will go here -->
+                    <h1>Unleash Your Wanderlust in Unparalleled Luxury</h1>
+                    <p>Craft a bespoke travel experience...</p>
+                    <a href="#customization-form" class="button primary-button hero-button">Start Designing Your Dream Trip</a>
+                </div>
+            </div>
+      
+
+        <section id="why-premium">
+            <h2>Experience the Difference: Premium Travel Tailored to You</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <i class="icon fa fa-compass"></i> <br> <!-- Font Awesome Icon -->
+                    <h3>Personalized Itineraries</h3>
+                    <p>Your journey, your way. We craft every detail to your desires, ensuring a truly unique experience.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="icon fa fa-gem"></i> <br> <!-- Font Awesome Icon -->
+                    <h3>Luxury & Comfort</h3>
+                    <p>Indulge in exquisite accommodations, seamless travel, and unparalleled comfort throughout your trip.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="icon fa fa-key"></i> <br> <!-- Font Awesome Icon -->
+                    <h3>Exclusive Access</h3>
+                    <p>Unlock hidden gems, private experiences, and VIP treatment, going beyond the typical tourist trail.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="icon fa fa-headset"></i> <br> <!-- Font Awesome Icon -->
+                    <h3>Dedicated Support</h3>
+                    <p>Enjoy personalized concierge service from the moment you inquire until you return home, ensuring peace of mind.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="customization-form">
+            <h2>Design Your Dream Trip - Step-by-Step Customization</h2>
+            <p class="form-description">Tell us your travel dreams, and we'll bring them to life. Follow these simple steps to begin crafting your personalized adventure.</p>
+
+            <form id="premium-form">
+                <div class="step-section" id="step-1">
+                    <h3>Step 1: Tell Us About You (Traveler Profile)</h3>
+                    <div class="form-group">
+                        <label for="adults">Number of Adults:<span class="required">*</span></label>
+                        <select id="adults" name="adults" required>
+                            <option value="">-- Select --</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5+">5+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="children">Number of Children (Ages):</label>
+                        <select id="children" name="children">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4+">4+</option>
+                        </select>
+                        <!-- Add age input fields if children > 0, dynamically with JavaScript if needed -->
+                    </div>
+                    <div class="form-group">
+                        <label>Travel Style:</label><br>
+                        <input type="checkbox" id="style-luxury" name="travel_style" value="luxury"> <label for="style-luxury">Luxury</label><br>
+                        <input type="checkbox" id="style-adventure" name="travel_style" value="adventure"> <label for="style-adventure">Adventure</label><br>
+                        <input type="checkbox" id="style-romantic" name="travel_style" value="romantic"> <label for="style-romantic">Romantic</label><br>
+                        <input type="checkbox" id="style-cultural" name="travel_style" value="cultural"> <label for="style-cultural">Cultural</label><br>
+                        <input type="checkbox" id="style-wellness" name="travel_style" value="wellness"> <label for="style-wellness">Wellness</label><br>
+                        <input type="checkbox" id="style-food-wine" name="travel_style" value="food_wine"> <label for="style-food-wine">Food & Wine</label><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="preferences">Travel Preferences (Tell us about your ideal trip):</label>
+                        <textarea id="preferences" name="preferences" rows="4"></textarea>
+                    </div>
+                </div>
+
+                <div class="step-section" id="step-2">
+                    <h3>Step 2: Destination & Travel Dates</h3>
+                    <div class="form-group">
+                        <label for="destination">Desired Destination:<span class="required">*</span></label>
+                        <input type="text" id="destination" name="destination" placeholder="Enter destination or region" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="travel-dates">Preferred Travel Dates:<span class="required">*</span></label>
+                        <input type="date" id="travel-dates-start" name="travel_dates_start" required> to <input type="date" id="travel-dates-end" name="travel_dates_end" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Flexible Dates:</label>
+                        <input type="checkbox" id="flexible-dates" name="flexible_dates" value="flexible"> <label for="flexible-dates">My dates are flexible</label>
+                    </div>
+                </div>
+
+                <div class="step-section" id="step-3">
+                    <h3>Step 3: Accommodation & Comfort</h3>
+                    <div class="form-group">
+                        <label>Accommodation Type:<span class="required">*</span></label><br>
+                        <input type="radio" id="hotel-luxury" name="accommodation_type" value="luxury_hotel" required> <label for="hotel-luxury">Luxury Hotel</label><br>
+                        <input type="radio" id="hotel-boutique" name="accommodation_type" value="boutique_hotel"> <label for="hotel-boutique">Boutique Hotel</label><br>
+                        <input type="radio" id="villa" name="accommodation_type" value="villa"> <label for="villa">Private Villa</label><br>
+                        <input type="radio" id="resort" name="accommodation_type" value="resort"> <label for="resort">Luxury Resort</label><br>
+                        <input type="radio" id="yacht" name="accommodation_type" value="yacht"> <label for="yacht">Private Yacht/Cruise</label><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="star-rating">Desired Star Rating:</label>
+                        <select id="star-rating" name="star_rating">
+                            <option value="">-- No Preference --</option>
+                            <option value="5">5-Star</option>
+                            <option value="4">4-Star</option>
+                            <option value="3">3-Star</option>
+                            <option value="any">Any Star Rating</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Specific Preferences:</label><br>
+                        <input type="checkbox" id="preference-ocean-view" name="preferences_accommodation" value="ocean_view"> <label for="preference-ocean-view">Ocean View</label><br>
+                        <input type="checkbox" id="preference-balcony" name="preferences_accommodation" value="balcony"> <label for="preference-balcony">Balcony/Terrace</label><br>
+                        <input type="checkbox" id="preference-spa" name="preferences_accommodation" value="spa_access"> <label for="preference-spa">Spa Access</label><br>
+                        <input type="checkbox" id="preference-pool" name="preferences_accommodation" value="private_pool"> <label for="preference-pool">Private Pool</label><br>
+                        <input type="checkbox" id="preference-family-suite" name="preferences_accommodation" value="family_suite"> <label for="preference-family-suite">Family Suite</label><br>
+                        <input type="checkbox" id="preference-accessibility" name="preferences_accommodation" value="accessibility"> <label for="preference-accessibility">Accessibility Features</label><br>
+                    </div>
+                </div>
+
+                <div class="step-section" id="step-4">
+                    <h3>Step 4: Experiences & Activities</h3>
+                    <div class="form-group">
+                        <label>Activity Categories:</label><br>
+                        <input type="checkbox" id="activity-adventure" name="activity_categories" value="adventure"> <label for="activity-adventure">Adventure Activities (Hiking, Diving, Safari)</label><br>
+                        <input type="checkbox" id="activity-cultural" name="activity_categories" value="cultural"> <label for="activity-cultural">Cultural Tours & Historical Sites</label><br>
+                        <input type="checkbox" id="activity-relaxation" name="activity_categories" value="relaxation"> <label for="activity-relaxation">Relaxation & Spa Treatments</label><br>
+                        <input type="checkbox" id="activity-culinary" name="activity_categories" value="culinary"> <label for="activity-culinary">Culinary Experiences & Wine Tasting</label><br>
+                        <input type="checkbox" id="activity-nightlife" name="activity_categories" value="nightlife"> <label for="activity-nightlife">Nightlife & Entertainment</label><br>
+                        <input type="checkbox" id="activity-shopping" name="activity_categories" value="shopping"> <label for="activity-shopping">Luxury Shopping</label><br>
+                        <input type="checkbox" id="activity-private-excursions" name="activity_categories" value="private_excursions"> <label for="activity-private-excursions">Private Excursions & Tours</label><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="interests-activities">Specific Interests/Activities (Optional):</label>
+                        <textarea id="interests-activities" name="interests_activities" rows="3"></textarea>
+                    </div>
+                </div>
+
+                <div class="step-section" id="step-5">
+                    <h3>Step 5: Transportation & Services</h3>
+                    <div class="form-group">
+                        <label>Flights:</label><br>
+                        <input type="radio" id="flights-include" name="flights" value="include"> <label for="flights-include">Include Flights (Quote Needed)</label><br>
+                        <input type="radio" id="flights-arrange" name="flights" value="arrange_myself" checked> <label for="flights-arrange">I will arrange flights myself</label><br>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="private-transfers" name="private_transfers" value="yes"> <label for="private-transfers">Include Private Airport Transfers</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="concierge-services" name="concierge_services" value="yes"> <label for="concierge-services">Interested in Dedicated Concierge Services</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="travel-insurance" name="travel_insurance" value="yes"> <label for="travel-insurance">Provide Quote for Premium Travel Insurance</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="other-requests">Other Requests (Optional):</label>
+                        <textarea id="other-requests" name="other_requests" rows="3"></textarea>
+                    </div>
+                </div>
+
+                <section id="quote-section">
+                    <h2>Ready to Discover Your Premium Journey?</h2>
+                    <div id="quote-summary">
+                        <!-- Summary of user selections will be displayed here dynamically with JavaScript (optional) -->
+                    </div>
+                    <div class="price-disclaimer">
+                        <p><strong>Estimated Price Range:</strong> Based on your selections, your premium package is likely to fall within the range of <strong>[Price Range] - [Price Range]</strong>. The final price will be confirmed after our travel experts review your request and create your personalized itinerary.</p>
+                        <p><em>Factors affecting price: Destination, accommodation level, activities, flights, seasonality, and specific requests.</em></p>
+                    </div>
+                    <div id="form-error-message" class="error-message" style="display:none;">Please fill in all required fields marked with an asterisk (*).</div>
+                    <button type="submit" class="button primary-button quote-button">Get My Personalized Quote</button>
+                </section>
+            </form>
+        </section>
+
+        <section id="inspiration">
+            <h2>Luxury Travel Inspiration</h2>
+            <div class="inspiration-grid">
+                <div class="inspiration-item">
+                    <img src="images/inspiration-beach.jpg" alt="Luxury Beach Destination">
+                    <h3>Exotic Beach Getaway</h3>
+                </div>
+                <div class="inspiration-item">
+                    <img src="images/inspiration-mountains.jpg" alt="Mountain Retreat">
+                    <h3>Secluded Mountain Retreat</h3>
+                </div>
+                <div class="inspiration-item">
+                    <img src="images/inspiration-city.jpg" alt="City Exploration">
+                    <h3>Sophisticated City Exploration</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Wanderlust Travels</div>
+            <p>© 2023 Wanderlust Travels. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="/privacy-policy">Privacy Policy</a></li>
+                <li><a href="/terms-of-service">Terms of Service</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <div id="submission-confirmation" class="confirmation-message" style="display:none;">
+        <div class="confirmation-content">
+            <i class="fa fa-check-circle confirmation-icon"></i>
+            <h2>Thank You!</h2>
+            <p>Your premium travel request has been received. Our travel experts will be in touch within 24-48 hours with your personalized quote and itinerary draft.</p>
+            <button id="close-confirmation" class="button primary-button">Close</button>
+        </div>
+    </div>
+
+    <script src="premium-packages.js"></script>
+</body>
+</html>
